@@ -28,7 +28,7 @@ To geocode an address, instantiate a new `com.bricolsoftconsulting.geocoderplus.
 
 The function will return a list of `Address` objects. You can get each result address properly formatted using `Address.getFormattedAddress()`. You can also get the latitude and longitude of an address using `Address.getLatitude()` and `Address.getLongitude()`. Finally, you can get the viewport using `Address.getViewPort()`. There are also additional properties to retrieve each individual address component.
 
-A complete example showing how to use the Geocoder to display locations on a map at the proper zoom factor is provided in the separate `GeocoderPlusExample` repository.
+A complete example showing how to use the Geocoder to display locations on a map at the proper zoom factor is provided in the separate `GeocoderPlusExample` repository at https://github.com/bricolsoftconsulting/GeocoderPlusExample/.
 
 ### Localization
 
