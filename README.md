@@ -36,21 +36,11 @@ Localization helps you customize the location results based on a particular lang
 
 #### Language Localization
 
-You can enable translated results by setting the locale. There are two ways to do this:
-
-1. At instantiation via the constructor:
-
-    Geocoder(Locale locale)
-
-1. After instantiation using the setter:
-
-    Geocoder.setLocale(Locale locale)
-
-If you provide a locale, GeocoderPlus will automatically use the language in that locale to customize results. If you do not provide a locale, GeocoderPlus will use the defaul locale language.
+GeocoderPlus uses the language in your default Android locale for geocoding. You can manually change the locale either at instantiation via the constructor `Geocoder(Locale locale)` or after instantiation using the setter `Geocoder.setLocale(Locale locale)`. Make sure you do this before calling the geocoding function.
 
 #### Region Biasing
 
-GeocoderPlus supports region biasing, which gives priority to results based on proximity to your region. For example, if you are in the US and have region biasing enabled, searching for `Rome` will give priority to `Rome, GA` and `Rome, NY` at the expense of `Rome, Italy` which will appear further down in the results.
+GeocoderPlus supports region biasing, which gives priority to certain results based on your location. For example, if you are in the US and have region biasing enabled, searching for `Rome` will give priority to `Rome, GA` and `Rome, NY` at the expense of `Rome, Italy` which will appear further down in the results.
 
 To enable regions biasing, use the setter `Geocoder.setUseRegionBias()`.
 
