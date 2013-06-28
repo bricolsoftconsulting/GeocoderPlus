@@ -436,7 +436,7 @@ public class Geocoder
 			
 			// Add viewport information
 			Area bounds = getAreaFromJSON(addressBounds);
-			result.setViewPort(bounds);
+			result.setBounds(bounds);
 		}
 		catch (JSONException e)
 		{
