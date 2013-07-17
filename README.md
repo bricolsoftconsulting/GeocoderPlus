@@ -9,13 +9,15 @@ GeocoderPlus does not include reverse geocoding. You can use the built-in Androi
 
 Installation
 ------------
-GeocoderPlus is provided as a JAR library. To add GeocoderPlus to your Android project in Eclipse, follow these steps:
+With Maven:
 
-1. Create a `lib` directory in your project and copy the `GeocoderPlus.jar` file there.
-1. Right click on your project in Eclipse and select `Properties`. This will open the `Properties` window.
-1. Select `Java Build Path` from the collapsable options tree on the left. This will show the build path options on the right.
-1. Select the `Libraries` tab.
-1. Click the `Add JARs...` button, browse to the lib directory in Step 1 and select the `GeocoderPlus.jar` file.
+	<dependency>
+		<groupId>com.bricolsoftconsulting</groupId>
+		<artifactId>geocoder-plus</artifactId>
+		<version>1.0</version>
+	</dependency>
+
+or add JAR as dependency.
 
 Usage
 -----
